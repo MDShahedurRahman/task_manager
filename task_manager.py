@@ -10,3 +10,10 @@ def add_task(tasks, title, description, due_date, priority):
     task = Task(task_id, title, description, due_date, "PENDING", priority)
     tasks.append(task.to_dict())
     return tasks
+
+
+def update_task_status(tasks, task_id, status):
+    for t in tasks:
+        if t["task_id"] == task_id:
+            t["status"] = status
+    return tasks
