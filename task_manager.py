@@ -17,3 +17,10 @@ def update_task_status(tasks, task_id, status):
         if t["task_id"] == task_id:
             t["status"] = status
     return tasks
+
+
+def update_task_priority(tasks, task_id, priority):
+    for t in tasks:
+        if t["task_id"] == task_id:
+            t["priority"] = priority
+    return tasks
