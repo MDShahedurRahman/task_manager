@@ -24,3 +24,7 @@ def update_task_priority(tasks, task_id, priority):
         if t["task_id"] == task_id:
             t["priority"] = priority
     return tasks
+
+
+def delete_task(tasks, task_id):
+    return [t for t in tasks if t["task_id"] != task_id]
