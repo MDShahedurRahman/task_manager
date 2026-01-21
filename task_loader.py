@@ -8,3 +8,8 @@ def load_tasks():
             return json.load(file)
     except FileNotFoundError:
         return []
+
+
+def save_tasks(tasks):
+    with open(DATA_FILE, "w") as file:
+        json.dump(tasks, file, indent=4)
