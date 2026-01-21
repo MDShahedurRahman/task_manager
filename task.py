@@ -6,3 +6,13 @@ class Task:
         self.due_date = due_date
         self.status = status
         self.priority = priority
+
+    def to_dict(self):
+        return {
+            "task_id": self.task_id,
+            "title": self.title,
+            "description": self.description,
+            "due_date": self.due_date,
+            "status": self.status,
+            "priority": self.priority
+        }
