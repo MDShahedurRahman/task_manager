@@ -8,3 +8,9 @@ def validate_date(date_str):
         return True
     except ValueError:
         return False
+
+
+def generate_task_id(tasks):
+    if not tasks:
+        return 1
+    return max(t["task_id"] for t in tasks) + 1
