@@ -16,3 +16,14 @@ class Task:
             "status": self.status,
             "priority": self.priority
         }
+
+    @staticmethod
+    def from_dict(data):
+        return Task(
+            data["task_id"],
+            data["title"],
+            data["description"],
+            data["due_date"],
+            data["status"],
+            data["priority"]
+        )
