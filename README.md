@@ -60,3 +60,27 @@ Each log entry must follow this format:
     2026-01-10 ERROR Database connection failed
 
 ------------------------------------------------------------------------
+
+## How to Run
+
+1.  Clone the repository:
+
+    ``` bash
+    git clone <repository-url>
+    ```
+
+2.  Navigate to the project directory:
+
+    ``` bash
+    cd log_analyzer
+    ```
+
+3.  Ensure `application.log` exists in the project root.
+
+4.  Run the application:
+
+    ``` bash
+    python main.py
+    ```
+
+------------------------------------------------------------------------
