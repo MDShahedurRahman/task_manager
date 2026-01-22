@@ -6,6 +6,13 @@ from report import summary_report, print_report
 
 def main():
     tasks = load_tasks()
+    tasks = add_task(
+        tasks,
+        "Finish project",
+        "Complete Python task manager",
+        "2026-02-01",
+        "HIGH"
+    )
 
 
 if __name__ == "__main__":
