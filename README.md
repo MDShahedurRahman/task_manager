@@ -95,3 +95,12 @@ Each log entry must follow this format:
     ERROR: 2
 
 ------------------------------------------------------------------------
+
+## Design Goals
+
+-   Keep functions small and focused
+-   Enable easy testing and refactoring
+-   Maintain readable and maintainable code
+-   Support meaningful incremental Git commits
+
+------------------------------------------------------------------------
