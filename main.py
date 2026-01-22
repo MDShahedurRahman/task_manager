@@ -15,6 +15,8 @@ def main():
     )
     save_tasks(tasks)
 
+    counts = count_by_status(tasks)
+
 
 if __name__ == "__main__":
     main()
