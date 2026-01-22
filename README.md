@@ -104,3 +104,17 @@ Each log entry must follow this format:
 -   Support meaningful incremental Git commits
 
 ------------------------------------------------------------------------
+
+## Potential Enhancements
+
+-   Add unit tests
+-   Support command-line arguments
+-   Export reports to JSON or CSV
+-   Integrate with cloud log sources (e.g., AWS CloudWatch)
+-   Add time-range filtering
+
+------------------------------------------------------------------------
+
+## License
+
+This project is intended for educational and demonstration purposes.
