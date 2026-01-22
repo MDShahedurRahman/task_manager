@@ -13,6 +13,7 @@ def main():
         "2026-02-01",
         "HIGH"
     )
+    save_tasks(tasks)
 
 
 if __name__ == "__main__":
