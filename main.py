@@ -17,6 +17,7 @@ def main():
 
     counts = count_by_status(tasks)
     report = summary_report(tasks, counts)
+    print_report(report)
 
 
 if __name__ == "__main__":
