@@ -43,3 +43,20 @@ showcasing meaningful incremental Git commit history.
 -   No third-party dependencies
 
 ------------------------------------------------------------------------
+
+## Log File Format
+
+The application expects a log file named **`application.log`** in the
+project root directory.
+
+Each log entry must follow this format:
+
+    YYYY-MM-DD LEVEL Message
+
+### Example
+
+    2026-01-10 INFO Application started
+    2026-01-10 WARNING Low disk space
+    2026-01-10 ERROR Database connection failed
+
+------------------------------------------------------------------------
