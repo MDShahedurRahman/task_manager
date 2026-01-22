@@ -1,29 +1,45 @@
 # Log File Analyzer (CLI)
 
-## Overview
-Log File Analyzer is a command-line Python application that reads, parses, filters, and analyzes application log files.
-The project focuses on clean Python structure, modular methods, and incremental Git commits for learning and portfolio development.
+Log File Analyzer is a command-line Python application that reads,
+parses, filters, and analyzes application log files.\
+The project demonstrates clean modular design, clear separation of
+concerns, and practical backend-style log processing using **Python's
+standard library only**.
 
-This project is intentionally built using only Python’s standard library to demonstrate core programming and backend-style log processing skills.
+This project is suitable for learning, portfolio development, and
+showcasing meaningful incremental Git commit history.
+
+------------------------------------------------------------------------
 
 ## Features
-- Load log data from a text-based log file
-- Parse structured log entries into Python objects
-- Filter logs by severity level
-- Filter logs by date
-- Count logs by severity
-- Generate summary statistics
-- Export filtered results to a file
+
+-   Load log data from a text-based log file
+-   Parse structured log entries
+-   Filter logs by severity level and date
+-   Count log occurrences by level
+-   Generate and display a summary report in the terminal
+
+------------------------------------------------------------------------
 
 ## Project Structure
-```
-log_file_analyzer/
-│
-├── main.py               # Application entry point
-├── file_loader.py        # Load log files from disk
-├── log_parser.py         # Parse raw log lines
-├── log_filter.py         # Apply filtering rules
-├── log_stats.py          # Generate statistics
-├── exporter.py           # Export analysis results
-└── README.md
-```
+
+    log_analyzer/
+    │
+    ├── main.py          # Application entry point
+    ├── config.py        # Global configuration values
+    ├── log_entry.py     # Log entry data model
+    ├── log_loader.py    # Log file loading logic
+    ├── log_parser.py    # Log parsing logic
+    ├── log_filter.py    # Log filtering functions
+    ├── analyzer.py      # Log analysis functions
+    ├── report.py        # Report generation and output
+    ├── utils.py         # Utility and validation helpers
+
+------------------------------------------------------------------------
+
+## Requirements
+
+-   Python 3.8 or higher
+-   No third-party dependencies
+
+------------------------------------------------------------------------
